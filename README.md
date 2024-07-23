@@ -20,11 +20,11 @@ This project aims to predict strokes using a neural network built with TensorFlo
 # Dataset
 The dataset used is the healthcare-dataset-stroke-data.csv, which includes various features such as age, gender, BMI, and average glucose level. The target variable is stroke, indicating whether the patient has had a stroke.
 
-```import pandas as pd
+import pandas as pd
 
 data = pd.read_csv('healthcare-dataset-stroke-data.csv')
 data = data.drop(columns=['smoking_status', 'Residence_type', 'id'])
-print(data.head())```
+print(data.head())
 
 
 # Data Preprocessing
