@@ -24,7 +24,7 @@ The dataset used is the healthcare-dataset-stroke-data.csv, which includes vario
 
 data = pd.read_csv('healthcare-dataset-stroke-data.csv')
 data = data.drop(columns=['smoking_status', 'Residence_type', 'id'])
-print(data.head())
+print(data.head())```
 
 
 # Data Preprocessing
