@@ -1,7 +1,8 @@
-#Stroke Prediction using TensorFlow and Keras Preprocessing
+# Stroke Prediction using TensorFlow and Keras Preprocessing
 
 This project demonstrates how to use TensorFlow and Keras preprocessing layers to build and train a neural network for predicting strokes. The dataset used for this project is the Healthcare Stroke Dataset.
-Table of Contents
+
+# Table of Contents
 
     Introduction
     Dataset
@@ -12,14 +13,12 @@ Table of Contents
     Results
     License
 
-Introduction
+# Introduction
 
 This project aims to predict strokes using a neural network built with TensorFlow and Keras. The preprocessing steps leverage Keras preprocessing layers for normalization and categorical encoding, demonstrating a streamlined approach to preparing data for machine learning models.
-Dataset
 
+# Dataset
 The dataset used is the healthcare-dataset-stroke-data.csv, which includes various features such as age, gender, BMI, and average glucose level. The target variable is stroke, indicating whether the patient has had a stroke.
-
-python
 
 import pandas as pd
 
@@ -27,10 +26,11 @@ data = pd.read_csv('healthcare-dataset-stroke-data.csv')
 data = data.drop(columns=['smoking_status', 'Residence_type', 'id'])
 print(data.head())
 
-Data Preprocessing
+# Data Preprocessing
 
 The preprocessing involves normalizing numerical features and encoding categorical features using Keras preprocessing layers.
-Normalization
+
+# Normalization
 
 We normalize numerical features to ensure they have a mean of 0 and a standard deviation of 1.
 
@@ -48,11 +48,11 @@ nm_col = train_features['age']
 layer = norm_layer('age', train_ds)
 print(layer(nm_col))
 
-Categorical Encoding
+# Categorical Encoding
 
 We encode categorical features using Keras preprocessing layers to convert string values to integer indices and then to one-hot encoded vectors.
 
-python
+
 
 def category_encoder(name, dataset, dtype, max_tokens=None):
     if dtype == 'string':
@@ -75,7 +75,7 @@ Model Building
 
 We build a neural network using TensorFlow Keras. The model includes an input layer for each feature, followed by a concatenation of the encoded features, and finally, dense and dropout layers.
 
-python
+
 
 import tensorflow as tf
 
@@ -113,7 +113,7 @@ Training the Model
 
 We split the data into training, validation, and test sets and train the model for 10 epochs.
 
-python
+
 
 from sklearn.model_selection import train_test_split
 
@@ -134,13 +134,13 @@ To use this project, clone the repository and run the provided code. Ensure you 
 
 sh
 
-git clone https://github.com/your-username/stroke-prediction.git
+git clone https://github.com/heuristic-solver/stroke-prediction.git
 cd stroke-prediction
 pip install -r requirements.txt
 
-Results
+# Results
 
 The model's performance will be displayed after training. You can further evaluate it on the test set using the evaluate method.
-License
+# License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
