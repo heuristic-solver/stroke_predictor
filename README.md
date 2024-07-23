@@ -136,4 +136,4 @@ To use this project, clone the repository and run the provided code. Ensure you 
 
 # License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache License - see the LICENSE file for details.
