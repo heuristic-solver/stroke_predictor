@@ -4,14 +4,13 @@ This project demonstrates how to use TensorFlow and Keras preprocessing layers t
 
 # Table of Contents
 
-    Introduction
-    Dataset
-    Data Preprocessing
-    Model Building
-    Training the Model
-    Usage
-    Results
-    License
+- Introduction
+- Dataset
+- Data Preprocessing
+- Model Building
+- Training the Model
+- Usage
+- License
 
 # Introduction
 
