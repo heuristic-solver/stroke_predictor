@@ -1,4 +1,4 @@
-Stroke Prediction using TensorFlow and Keras Preprocessing
+#Stroke Prediction using TensorFlow and Keras Preprocessing
 
 This project demonstrates how to use TensorFlow and Keras preprocessing layers to build and train a neural network for predicting strokes. The dataset used for this project is the Healthcare Stroke Dataset.
 Table of Contents
