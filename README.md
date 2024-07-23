@@ -26,6 +26,7 @@ data = pd.read_csv('healthcare-dataset-stroke-data.csv')
 data = data.drop(columns=['smoking_status', 'Residence_type', 'id'])
 print(data.head())
 
+
 # Data Preprocessing
 
 The preprocessing involves normalizing numerical features and encoding categorical features using Keras preprocessing layers.
