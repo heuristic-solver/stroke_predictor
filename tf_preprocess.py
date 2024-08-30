@@ -5,13 +5,13 @@ from tensorflow.keras.layers.experimental import preprocessing
 from sklearn.model_selection import train_test_split 
 
 
-data = pd.read_csv('healthcare-dataset-stroke-data.csv')
+data = pd.read_csv('healthcare-dataset-stroke-data.csv') 
 
 
 data = data.drop(columns=['smoking_status','Residence_type','id'])
 print(data.head())
 
-def make_dataset(data,shuffle = True, batch_size =32):
+def make_dataset(data,shuffle = True, batch_size =32): #data preprocessing
     dataframe = data.copy()
     label = dataframe.pop('stroke')
     ds = tf.data.Dataset.from_tensor_slices((dict(dataframe),label))
